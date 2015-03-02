@@ -1,0 +1,496 @@
+html {
+  font-family: "Maven Pro", sans-serif;
+  font-size: 100%;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased; }
+  html body {
+    font-family: "Maven Pro", sans-serif;
+    font-size: 100%;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased; }
+    html body header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 1em 0;
+      background-color: #ffffff;
+      background-color: rgba(255, 255, 255, 0.5);
+      z-index: 100; }
+      html body header img {
+        width: 150px;
+        float: left; }
+      html body header nav {
+        text-align: right;
+        position: fixed;
+        right: 1em;
+        height: 0; }
+        html body header nav .menu-button {
+          background: url("../img/single_sail.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+          border: 0;
+          width: 69px;
+          height: 51px;
+          outline: none;
+          display: table;
+          text-decoration: none;
+          cursor: pointer; }
+          html body header nav .menu-button i.fa {
+            color: #000000;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 1.2em;
+            padding: 0.2em 0 0 1em;
+            margin-left: 1em;
+            transition: 0.7s ease-in-out;
+            -o-transition: 0.7s ease-in-out;
+            -moz-transition: 0.7s ease-in-out;
+            -webkit-transition: 0.7s ease-in-out; }
+        html body header nav ul {
+          padding: 0;
+          margin-top: 1em;
+          position: relative;
+          right: -30em;
+          transition: 0.7s ease-in-out;
+          -o-transition: 0.7s ease-in-out;
+          -moz-transition: 0.7s ease-in-out;
+          -webkit-transition: 0.7s ease-in-out; }
+          html body header nav ul li {
+            list-style: none; }
+            html body header nav ul li a {
+              display: table;
+              margin-bottom: 0.5em;
+              outline: none;
+              color: #25aae1;
+              position: relative; }
+              html body header nav ul li a.current-page .netclipper-sail i.fa {
+                color: #00FF00; }
+              html body header nav ul li a.current-page, html body header nav ul li a:hover {
+                text-decoration: none; }
+                html body header nav ul li a.current-page p, html body header nav ul li a:hover p {
+                  /*display: inline;*/
+                  right: 2.5em; }
+              html body header nav ul li a:focus {
+                outline: none; }
+              html body header nav ul li a p {
+                display: table-cell;
+                right: -20em;
+                top: 0.4em;
+                position: absolute;
+                vertical-align: middle;
+                background-color: #25aae1;
+                color: #ffffff;
+                padding: 0 1em;
+                -webkit-border-radius: 1em;
+                -moz-border-radius: 1em;
+                -ms-border-radius: 1em;
+                border-radius: 1em;
+                transition: 0.2s ease-in-out;
+                -o-transition: 0.2s ease-in-out;
+                -moz-transition: 0.2s ease-in-out;
+                -webkit-transition: 0.2s ease-in-out;
+                z-index: 1; }
+              html body header nav ul li a .netclipper-sail {
+                background: url("../img/single_sail.png");
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 46px;
+                height: 34px;
+                display: table;
+                text-align: right;
+                position: relative;
+                z-index: 2; }
+                html body header nav ul li a .netclipper-sail i.fa {
+                  color: #ffffff;
+                  display: table-cell;
+                  vertical-align: middle;
+                  text-align: center;
+                  font-size: 1.2em;
+                  padding: 0.1em 0 0 0.8em; }
+        html body header nav.active {
+          height: auto; }
+          html body header nav.active .menu-button i.fa {
+            color: #00FF00; }
+          html body header nav.active ul {
+            right: -1.5em; }
+    html body div.container-fluid {
+      position: relative; }
+      html body div.container-fluid section {
+        /*width: 100%;*/
+        padding-top: 10px;
+        padding-bottom: 10px; }
+        html body div.container-fluid section .text-box {
+          background-color: #25aae1;
+          background-color: #25aae1;
+          padding: 1.5em;
+          color: #ffffff;
+          display: inline-block;
+          -webkit-border-radius: 1em;
+          -moz-border-radius: 1em;
+          -ms-border-radius: 1em;
+          border-radius: 1em; }
+          html body div.container-fluid section .text-box.center {
+            text-align: center;
+            width: 100%; }
+          html body div.container-fluid section .text-box.beige {
+            background-color: #cec185;
+            background-color: rgba(206, 193, 133, 0.8); }
+        html body div.container-fluid section h1 {
+          text-align: center;
+          margin: 0 0 1em 0;
+          text-transform: uppercase;
+          font-weight: bold; }
+        html body div.container-fluid section#home {
+          background: #ffffff; }
+          html body div.container-fluid section#home strong {
+            display: block;
+            text-align: center;
+            font-size: 105%; }
+          html body div.container-fluid section#home p {
+            text-indent: 50px;
+            text-align: justify; }
+        html body div.container-fluid section#portfolio {
+          background: #ffffff;
+          /* Old browsers */
+          /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+          background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjUlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMjAlIiBzdG9wLWNvbG9yPSIjZjJmMmYyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNTAlIiBzdG9wLWNvbG9yPSIjNDg4Y2RiIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjZjJmMmYyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iOTUlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+          background: -moz-linear-gradient(-45deg, #ffffff 5%, #f2f2f2 20%, #488cdb 50%, #f2f2f2 80%, #ffffff 95%);
+          /* FF3.6+ */
+          background: -webkit-gradient(linear, left top, right bottom, color-stop(5%, #ffffff), color-stop(20%, #f2f2f2), color-stop(50%, #488cdb), color-stop(80%, #f2f2f2), color-stop(95%, #ffffff));
+          /* Chrome,Safari4+ */
+          background: -webkit-linear-gradient(-45deg, #ffffff 5%, #f2f2f2 20%, #488cdb 50%, #f2f2f2 80%, #ffffff 95%);
+          /* Chrome10+,Safari5.1+ */
+          background: -o-linear-gradient(-45deg, #ffffff 5%, #f2f2f2 20%, #488cdb 50%, #f2f2f2 80%, #ffffff 95%);
+          /* Opera 11.10+ */
+          background: -ms-linear-gradient(-45deg, #ffffff 5%, #f2f2f2 20%, #488cdb 50%, #f2f2f2 80%, #ffffff 95%);
+          /* IE10+ */
+          background: linear-gradient(135deg, #ffffff 5%, #f2f2f2 20%, #488cdb 50%, #f2f2f2 80%, #ffffff 95%);
+          /* W3C */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=1 );
+          /* IE6-8 fallback on horizontal gradient */ }
+          html body div.container-fluid section#portfolio .portfolio-slider-wrapper {
+            overflow: hidden;
+            display: inline-block;
+            width: 100%; }
+          html body div.container-fluid section#portfolio .portfolio-slider {
+            padding: 0; }
+          html body div.container-fluid section#portfolio .portfolio-slider-nav {
+            padding: 0.5em 0;
+            display: inline-block;
+            width: 100%; }
+            html body div.container-fluid section#portfolio .portfolio-slider-nav a {
+              background: #666666;
+              padding: 0.5em;
+              width: 7em;
+              color: #ffffff;
+              text-decoration: none;
+              -webkit-border-radius: 1em;
+              -moz-border-radius: 1em;
+              -ms-border-radius: 1em;
+              border-radius: 1em; }
+              html body div.container-fluid section#portfolio .portfolio-slider-nav a#portfolioSliderPrevious {
+                float: left;
+                text-align: center; }
+              html body div.container-fluid section#portfolio .portfolio-slider-nav a#portfolioSliderNext {
+                float: right;
+                text-align: center; }
+              html body div.container-fluid section#portfolio .portfolio-slider-nav a:hover {
+                color: #25aae1; }
+          html body div.container-fluid section#portfolio .portfolio-item {
+            /*width: 32%;
+            margin-right: 2%;
+            display: inline;*/
+            width: 100%;
+            display: block;
+            margin-left: 0;
+            float: left;
+            position: relative;
+            padding: 0.5em; }
+            html body div.container-fluid section#portfolio .portfolio-item:nth-child(3n+3) {
+              margin-right: 0; }
+            html body div.container-fluid section#portfolio .portfolio-item .ss {
+              background-color: #ffffff;
+              -webkit-border-radius: 1em;
+              -moz-border-radius: 1em;
+              -ms-border-radius: 1em;
+              border-radius: 1em;
+              padding: 1em;
+              display: inline-block;
+              width: 100%; }
+            html body div.container-fluid section#portfolio .portfolio-item .ss-txt {
+              width: 49%;
+              float: right;
+              box-sizing: border-box; }
+            html body div.container-fluid section#portfolio .portfolio-item .ss-img {
+              width: 49%;
+              box-sizing: border-box; }
+              html body div.container-fluid section#portfolio .portfolio-item .ss-img img {
+                max-width: 100%; }
+            html body div.container-fluid section#portfolio .portfolio-item .techs-used {
+              display: inline-block; }
+              html body div.container-fluid section#portfolio .portfolio-item .techs-used img {
+                height: 3em; }
+            html body div.container-fluid section#portfolio .portfolio-item h3 {
+              width: 100%;
+              margin: 0; }
+            html body div.container-fluid section#portfolio .portfolio-item img {
+              float: left;
+              margin: 0.2em 0.5em 0 0; }
+            html body div.container-fluid section#portfolio .portfolio-item p {
+              text-align: left; }
+            html body div.container-fluid section#portfolio .portfolio-item a {
+              display: block;
+              margin-top: 1em; }
+            html body div.container-fluid section#portfolio .portfolio-item.screenshot {
+              cursor: pointer; }
+        html body div.container-fluid section#agencies {
+          background: #f0f0f0; }
+          html body div.container-fluid section#agencies .content {
+            overflow: auto;
+            overflow-y: hidden;
+            /*&::-webkit-scrollbar-thumb:vertical{height:50px;background-color:#999;-webkit-border-radius:8px;}*/ }
+            html body div.container-fluid section#agencies .content::-webkit-scrollbar {
+              width: 9px;
+              height: 9px; }
+            html body div.container-fluid section#agencies .content::-webkit-scrollbar-track-piece {
+              background-color: #FAFAFA;
+              -webkit-border-radius: 0;
+              -webkit-border-bottom-right-radius: 8px;
+              -webkit-border-bottom-left-radius: 8px; }
+            html body div.container-fluid section#agencies .content::-webkit-scrollbar-thumb:horizontal {
+              width: 50px;
+              background-color: #25aae1;
+              -webkit-border-radius: 8px; }
+          html body div.container-fluid section#agencies .agency-list {
+            /*display: inline-block;*/
+            padding: 0;
+            margin: 0;
+            width: 100%; }
+            html body div.container-fluid section#agencies .agency-list .agency-item {
+              /*display: inline-block;*/
+              background: #ffffff;
+              padding: 1em;
+              margin: 0 0.5em 0.5em 0;
+              float: left;
+              border: 1px solid #25aae1;
+              width: 22%;
+              list-style: none; }
+              html body div.container-fluid section#agencies .agency-list .agency-item img {
+                max-width: 100%; }
+        html body div.container-fluid section#technologies {
+          background: #f0f0f0; }
+          html body div.container-fluid section#technologies .technology-list {
+            display: inline-block;
+            padding: 0;
+            margin: 0; }
+            html body div.container-fluid section#technologies .technology-list .technology-item {
+              list-style: none;
+              display: inline-block;
+              float: left;
+              margin: 0.3em 1em; }
+        html body div.container-fluid section#recommendations {
+          background: #ffffff; }
+          html body div.container-fluid section#recommendations .recommendation-slider-wrapper {
+            overflow: hidden;
+            display: inline-block;
+            width: 100%; }
+          html body div.container-fluid section#recommendations .recommendation-slider {
+            padding: 0;
+            text-align: center; }
+          html body div.container-fluid section#recommendations .recommendation-slider-nav {
+            padding: 0.5em 0;
+            display: inline-block;
+            width: 100%;
+            text-align: center; }
+            html body div.container-fluid section#recommendations .recommendation-slider-nav a {
+              background: #666666;
+              padding: 0.5em;
+              width: 7em;
+              color: #ffffff;
+              text-decoration: none;
+              margin: 0 2px; }
+              html body div.container-fluid section#recommendations .recommendation-slider-nav a#recommendationSliderPrevious {
+                -webkit-border-top-left-radius: 1em;
+                -moz-border-top-left-radius: 1em;
+                -ms-border-top-left-radius: 1em;
+                border-top-left-radius: 1em;
+                -webkit-border-bottom-left-radius: 1em;
+                -moz-border-bottom-left-radius: 1em;
+                -ms-border-bottom-left-radius: 1em;
+                border-bottom-left-radius: 1em; }
+              html body div.container-fluid section#recommendations .recommendation-slider-nav a#recommendationSliderNext {
+                -webkit-border-top-right-radius: 1em;
+                -moz-border-top-right-radius: 1em;
+                -ms-border-top-right-radius: 1em;
+                border-top-right-radius: 1em;
+                -webkit-border-bottom-right-radius: 1em;
+                -moz-border-bottom-right-radius: 1em;
+                -ms-border-bottom-right-radius: 1em;
+                border-bottom-right-radius: 1em; }
+              html body div.container-fluid section#recommendations .recommendation-slider-nav a#recommendationSliderPlay.active {
+                background: #25aae1;
+                color: #ffffff; }
+              html body div.container-fluid section#recommendations .recommendation-slider-nav a:hover {
+                color: #25aae1; }
+          html body div.container-fluid section#recommendations .recommendation-item {
+            text-align: left;
+            width: 60%;
+            margin: 0 1%;
+            display: inline;
+            float: left; }
+            html body div.container-fluid section#recommendations .recommendation-item img {
+              -webkit-border-top-left-radius: 1.5em;
+              -moz-border-top-left-radius: 1.5em;
+              -ms-border-top-left-radius: 1.5em;
+              border-top-left-radius: 1.5em;
+              -webkit-border-bottom-right-radius: 1.5em;
+              -moz-border-bottom-right-radius: 1.5em;
+              -ms-border-bottom-right-radius: 1.5em;
+              border-bottom-right-radius: 1.5em;
+              border: 1px solid #ffffff;
+              float: left;
+              margin-right: 0.5em; }
+            html body div.container-fluid section#recommendations .recommendation-item sub {
+              margin-bottom: 1em;
+              line-height: 1em;
+              font-size: 90%; }
+            html body div.container-fluid section#recommendations .recommendation-item p {
+              margin-top: 0.5em; }
+              html body div.container-fluid section#recommendations .recommendation-item p.person-name {
+                margin-top: 0;
+                line-height: 0.7em; }
+        html body div.container-fluid section#contact {
+          background: #f0f0f0;
+          text-align: center; }
+          html body div.container-fluid section#contact .text-box {
+            padding: 1em 5em;
+            margin-top: 3em;
+            background-color: rgba(37, 170, 225, 0.6); }
+            html body div.container-fluid section#contact .text-box p {
+              margin-bottom: 0; }
+            html body div.container-fluid section#contact .text-box .contact-buttons {
+              margin-top: 2em; }
+              html body div.container-fluid section#contact .text-box .contact-buttons img {
+                width: 4em;
+                height: 4em; }
+            html body div.container-fluid section#contact .text-box h3 {
+              margin: 0;
+              line-height: 1.5em; }
+    html body footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 100;
+      background-color: #000000;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 70%; }
+      html body footer p {
+        margin: 0; }
+    html body #lightBox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 100;
+      background: #000000;
+      background-color: rgba(0, 0, 0, 0.8);
+      display: none;
+      overflow-y: auto;
+      text-align: center;
+      padding-top: 3em; }
+      html body #lightBox #lightBoxImage {
+        width: 64%;
+        display: inline-block;
+        border: 1px solid #ffffff;
+        margin: 0 auto;
+        text-align: center;
+        background: #000000;
+        color: #ffffff; }
+        html body #lightBox #lightBoxImage img {
+          max-width: 100%; }
+        html body #lightBox #lightBoxImage p {
+          width: 100%;
+          margin: 0; }
+      html body #lightBox #lightBoxClose {
+        position: fixed;
+        top: 1em;
+        right: 1em;
+        color: #ffffff; }
+        html body #lightBox #lightBoxClose i {
+          padding: 0.5em;
+          font-size: 1.5em; }
+        html body #lightBox #lightBoxClose:hover {
+          color: #25aae1; }
+  html.ie8 .menu-button,
+  html.ie8 .netclipper-sail {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/single_sail.png',sizingMethod='scale');
+    -ms-filter: 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src="img/single_sail.png",sizingMethod="scale")'; }
+  html.ie8 .menu-button {
+    background-position-x: -8px; }
+  html.ie8 .netclipper-sail {
+    background-position-x: -75px; }
+
+@media only screen and (max-width: 767px) {
+  html body header {
+    background-color: #ffffff; }
+  html body div.container-fluid section {
+    padding-top: 0; }
+    html body div.container-fluid section#portfolio .portfolio-item {
+      width: 100%;
+      display: block;
+      margin-left: 0; }
+    html body div.container-fluid section#portfolio .portfolio-item .ss-txt,
+    html body div.container-fluid section#portfolio .portfolio-item .ss-img {
+      float: left;
+      width: 100%; }
+    html body div.container-fluid section#agencies .agency-list .agency-item {
+      width: 40%; }
+    html body div.container-fluid section#recommendations .recommendation-item {
+      width: 100%;
+      margin: 0; }
+    html body div.container-fluid section#contact .text-box {
+      padding: 0; }
+  html body div.container-fluid .row {
+    margin: 0; }
+  html body footer {
+    position: static; } }
+@media only screen and (max-width: 479px) {
+  html body header {
+    background-color: #ffffff; }
+  html body div.container-fluid section#agencies .agency-list .agency-item {
+    width: 100%; }
+  html body div.container-fluid section#contact .text-box .contact-buttons img {
+    width: 3em;
+    height: 3em; } }
+/*keyframes*/
+@keyframes loop-animation {
+  /* Firefox */
+  0% {
+    color: #ffffff; }
+  50% {
+    color: #ffff00; }
+  100% {
+    color: #ffffff; } }
+@-moz-keyframes loop-animation {
+  /* Firefox */
+  0% {
+    color: #ffffff; }
+  50% {
+    color: #ffff00; }
+  100% {
+    color: #ffffff; } }
+@-webkit-keyframes loop-animation {
+  /* Safari and Chrome */
+  0% {
+    color: #ffffff; }
+  50% {
+    color: #ffff00; }
+  100% {
+    color: #ffffff; } }
+
+/*# sourceMappingURL=style.css.map */

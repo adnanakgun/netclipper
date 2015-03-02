@@ -1,0 +1,124 @@
+<html ng-app="app" id="ng-app">
+<head>
+  <meta charset="utf-8">
+
+  <title>Netclipper IT Solutions Limited</title>
+  <meta name="description" content="Fast, Safe, Reliable Web Applications and Websites">
+  <meta name="author" content="Adnan Akgun">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,700,500' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Coda' rel='stylesheet' type='text/css'>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!--[if gte IE 9]>
+    <style type="text/css">
+      .gradient {
+        filter: none;
+      }
+    </style>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <link rel="Shortcut Icon" href="img/favicon.ico" type="image/x-icon"/>
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body ng-controller="dataController">
+  <header class="container-fluid">
+    <img src="img/logo.png"/>
+    <nav ng-class="{active: navMenuOpen}">
+      <a class="menu-button" ng-click="navMenuOpen=!navMenuOpen"><i class="fa fa-bars"></i></a>
+      <ul>
+        <li>
+          <a href="#home"><p>home</p><div class="netclipper-sail"><i class="fa fa-home"></i></div></a> <!-- home -->
+        </li>
+        <li>
+          <a href="#portfolio"><p>portfolio</p><div class="netclipper-sail"><i class="fa fa-cogs"></i></div></a><!--  portfolio -->
+        </li>
+        <li>
+          <a href="#agencies"><p>agencies</p><div class="netclipper-sail"><i class="fa fa-font"></i></div></a><!--  agencies -->
+        </li>
+        <li>
+          <a href="#recommendations"><p>recommendations</p><div class="netclipper-sail"><i class="fa fa-thumbs-up"></i></div></a><!--  recommendations -->
+        </li>
+        <li>
+          <a href="#contact"><p>contact</p><div class="netclipper-sail"><i class="fa fa-phone"></i></div></a><!--  contact -->
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container-fluid">
+    
+    <section class="row" id="home" custom-section model="data.home">
+    </section>
+
+    <section class="row" id="portfolio" custom-section model="data.portfolio">
+    </section>
+
+    <section class="row" id="agencies" custom-section model="data.agencies">
+    </section>
+
+    <section class="row" id="recommendations" custom-section model="data.recommendations">
+    </section>
+
+    <section class="row" id="contact" custom-section model="data.contact">
+    </section>
+
+  </div>
+
+  <footer class="container-fluid">
+    <p>
+      &copy; Copyright 2014 netclipper it solutions limited, Company Number. 8093124 VAT reg. Number 163 9617 82
+    </p>
+  </footer>
+  <div id="lightBox">
+    <div id="lightBoxImage">
+      <p></p>
+      <img></img>
+    </div>
+    <a id="lightBoxClose" href="#">
+      <i class="fa fa-close"></i>
+    </a>
+  </div>
+  <!-- data-->
+  <script src="data/getPortfolio.js"></script>
+  <script src="data/getAgencies.js"></script>
+  <script src="data/getRecommendations.js"></script>
+  <script src="data/getTechnologies.js"></script>
+
+  <script src="js/vendor/angular.min.js"></script>
+  <script src="js/app.js"></script>
+
+  <script type="text/javascript" src="js/vendor/jquery.min.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.backstretch.min.js"></script>
+  <script type="text/javascript" src="js/vendor/jquery.mousewheel.js"></script>
+  <script type="text/javascript" src="js/vendor/masonry.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/vendor/imagesloaded.pkgd.min.js"></script>
+
+  <script src="js/scripts.js"></script>
+
+  <script>
+    var _gaq=[['_setAccount','UA-27395250-1'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
+    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+    s.parentNode.insertBefore(g,s)}(document,'script'));
+  </script>
+
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.2/CFInstall.min.js"></script>
+    <script>window.attachEvent("onload",function(){CFInstall.check({mode:"overlay"})})</script>
+    <![endif]-->
+
+</body>
+</html>

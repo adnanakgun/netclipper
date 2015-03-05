@@ -1,4 +1,14 @@
-<html ng-app="app" id="ng-app">
+
+<!doctype html>
+<!--[if lt IE 9]>    
+  <html ng-app="app" id="ng-app" class="ie ie8">
+<![endif]-->
+<!--[if IE]>    
+  <html ng-app="app" id="ng-app" class="ie">
+<![endif]-->
+<!--[if !IE]><!---->    
+  <html ng-app="app" id="ng-app">
+<!--<![endif]-->
 <head>
   <meta charset="utf-8">
 
@@ -7,30 +17,32 @@
   <meta name="author" content="Adnan Akgun">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
   
-  <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,700,500' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Coda' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=Maven+Pro:400,700,500" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Coda" rel="stylesheet" type="text/css">
 
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
 
   <link rel="stylesheet" href="css/style.css">
 
-  <!--[if gte IE 9]>
-    <style type="text/css">
-      .gradient {
-        filter: none;
-      }
-    </style>
-  <![endif]-->
-
-  <!--[if lt IE 9]>
+  <!--[if lt IE 9]>    
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 
+  <!--[if gte IE 9]>
+    <style type="text/css">
+      html body div.container-fluid section#portfolio {
+         filter: none;
+      }
+    </style>
+  <![endif]-->
+
   <link rel="Shortcut Icon" href="img/favicon.ico" type="image/x-icon"/>
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body ng-controller="dataController">
   <header class="container-fluid">
@@ -79,7 +91,7 @@
 
   <footer class="container-fluid">
     <p>
-      &copy; Copyright 2014 netclipper it solutions limited, Company Number. 8093124 VAT reg. Number 163 9617 82
+      &copy; Copyright 2015 netclipper it solutions limited, Company Number. 8093124 VAT reg. Number 163 9617 82
     </p>
   </footer>
   <div id="lightBox">

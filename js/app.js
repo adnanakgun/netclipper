@@ -144,7 +144,7 @@ app.directive('customSection', function() {
         
       }],
       link: function($scope, element, attr) {
-        $(window).resize();
+        
       }
   };
 });

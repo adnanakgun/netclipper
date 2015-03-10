@@ -155,7 +155,7 @@ var portfolioData ={
 			"image": "img/portfolio/screenshots/telefonica.png",
 			"spot": "img/portfolio/spot/telefonica.png",
 			"logo": "img/portfolio/telefonica_logo.png",
-			"header": "Telefonica",
+			"header": "Telefonica / O2",
 			"p": "We have helped developing the front end of a remote sensor monitoring app called Blnk.",
 			"techs": ["angularjs", "html5", "css3", "javascript", "json","phonegap"]
 		}

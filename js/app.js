@@ -74,11 +74,16 @@ app.controller('dataController', ['$scope', '$sce', function dataController($sco
 
   $scope.data = {
     home: {
-      header: 'Who we are, what we do',
+      header: 'We are a Front End Development consultancy',
       content: $sce.trustAsHtml('<div class="text-box">' +                                 
-                                  '<strong>Netclipper IT Solutions Limited is a consultancy specialising in Front End Development contracts.</strong>' + 
+                                  //'<h4>Netclipper IT Solutions Limited is a consultancy specialising in Front End Development contracts</h4>' + 
                                   '<p>The “Net” is an ocean. An ocean, any business is obliged to sail through. Its waters are treacherous, there are numerous routes and the competition is fierce. Regardless, we strive to be the vessel to get you where you need to be; in time, in one piece. We will navigate you through the options and help your business to prosper.</p>' +
-                                  '<strong>We build beautiful websites and amazing web applications.</strong>' + 
+                                '</div>')
+    },
+    about: {
+      header: 'What we do',
+      content: $sce.trustAsHtml('<div class="text-box">' +                                 
+                                  '<h4>We build beautiful websites and amazing web applications</h4>' + 
                                   //'<p>We will provide you with a simple and clear plan, as well as a satisfying user journey, on how to build an efficient site or help you build a web application. Together we will decide which technology and/or design is best for your purposes. We offer our clients affordable, high quality design that will perform for their businesses.</p>' +
                                   '<p>Having years of experience in our field, we are very adept in turning user journeys and concepts into reality. Regardless of the duration of the contract, we build W3C and cross browser compliant, performance and seo optimised, responsive websites. Likewise, we observe and apply the latest trends in client side frameworks and libraries while developing secure, multi-tiered applications.</p>' +
                                 '</div>')
@@ -136,7 +141,7 @@ app.directive('customSection', function() {
       },
       template: '<div class="col-md-2"></div>' +
                 '<div class="col-md-8">' +
-                ' <h1>{{model.header}}</h1>' +
+                ' <h2>{{model.header}}</h2>' +
                 ' <div class="content" ng-bind-html="model.content"></div>' +
                 '</div>' +
                 '<div class="col-md-2"></div>',

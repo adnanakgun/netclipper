@@ -215,7 +215,7 @@ html{
 					margin: 0 0 1em 0;
 					text-transform: uppercase;
 					/*font-weight: bold;*/
-					font-family:'Comic Sans MS',cursive;
+					font-family: 'Comic Sans MS', 'Marker Felt', cursive;
 				}
 				&#home{
 					background: #f0f0f0;
@@ -622,6 +622,17 @@ html{
 					&#contact{
 						.text-box{
 							padding: 0;
+						}
+					}					
+					&#home,
+					&#about{
+						p{
+							text-indent: 0;
+						}
+					}
+					&#home{
+						.text-box{
+							margin-top: 0;
 						}
 					}
 				}

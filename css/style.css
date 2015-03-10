@@ -141,7 +141,7 @@ html {
           margin: 0 0 1em 0;
           text-transform: uppercase;
           /*font-weight: bold;*/
-          font-family: 'Comic Sans MS',cursive; }
+          font-family: 'Comic Sans MS', 'Marker Felt', cursive; }
         html body div.container-fluid section#home {
           background: #f0f0f0;
           font-size: 115%;
@@ -470,6 +470,10 @@ html {
       margin: 0; }
     html body div.container-fluid section#contact .text-box {
       padding: 0; }
+    html body div.container-fluid section#home p, html body div.container-fluid section#about p {
+      text-indent: 0; }
+    html body div.container-fluid section#home .text-box {
+      margin-top: 0; }
   html body div.container-fluid .row {
     margin: 0; }
   html body footer {
